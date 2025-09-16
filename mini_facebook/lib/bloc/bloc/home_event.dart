@@ -1,4 +1,4 @@
-part of 'home_bloc.dart';
+class Event {}
 
-@immutable
-sealed class HomeEvent {}
+class EventInitial extends Event{}
+class EventHome extends Event{}

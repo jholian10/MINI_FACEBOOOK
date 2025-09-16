@@ -14,20 +14,7 @@ class Historias extends StatelessWidget {
         decoration: BoxDecoration(
           border: Border.all(color: Colors.black, width: 2),
         ),
-        child: Row(
-          children: [
-            Expanded(
-              child: Container(
-                decoration: BoxDecoration(
-                  border: Border(
-                    right: BorderSide(color: Colors.black, width: 2),
-                  ),
-                ),
-          
-                      ),
-                    ),
-          ])
-                ),
-              );
-}
+      ),
+    );
+  }
 }

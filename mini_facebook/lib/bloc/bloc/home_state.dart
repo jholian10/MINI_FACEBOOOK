@@ -1,5 +1,5 @@
 class Estados {}
-class login extends estados{}
-class HomeEvent extends estados{}
-class loading extends estados{}
-class fallo extends estados{}
+class login extends Estados{}
+class HomeEvent extends Estados{}
+class loading extends Estados{}
+class fallo extends Estados{}
