@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:mini_facebook/bloc/bloc/home_event.dart';
 import 'package:mini_facebook/viwes/wiget/input.dart';
+import 'package:mini_facebook/bloc/bloc/home_bloc.dart';
 
 class Login extends StatelessWidget {
   const Login({super.key});
@@ -12,7 +15,9 @@ class Login extends StatelessWidget {
         backgroundColor: Colors.white,
         leading: IconButton(
           icon: Icon(Icons.arrow_back_ios, color: Colors.black),
-          onPressed: () {},
+          onPressed: () {
+            context.read<Logicaapp>()..add(EventInitial());
+          },
         ),
       ),
       body: Column(

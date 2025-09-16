@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:mini_facebook/bloc/bloc/home_bloc.dart';
+import 'package:mini_facebook/bloc/bloc/home_event.dart';
 import 'package:mini_facebook/viwes/loading.dart';
 
 class Input extends StatelessWidget {
@@ -26,7 +29,7 @@ class Input extends StatelessWidget {
           SizedBox(height: 20),
           ElevatedButton(
             onPressed: () {
-              
+              context.read<Logicaapp>()..add(EventInitial());
             },
             style: ElevatedButton.styleFrom(
               minimumSize: Size(500, 40),
