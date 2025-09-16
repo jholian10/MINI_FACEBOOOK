@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mini_facebook/viwes/loading.dart';
 
 class Input extends StatelessWidget {
   const Input({super.key});
@@ -24,7 +25,9 @@ class Input extends StatelessWidget {
           ),
           SizedBox(height: 20),
           ElevatedButton(
-            onPressed: () {},
+            onPressed: () {
+              
+            },
             style: ElevatedButton.styleFrom(
               minimumSize: Size(500, 40),
               backgroundColor: Colors.blue,
