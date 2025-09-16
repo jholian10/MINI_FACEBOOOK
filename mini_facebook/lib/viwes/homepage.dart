@@ -13,19 +13,16 @@ class Homepage extends StatelessWidget {
           IconButton(
             icon: Icon(Icons.add, color: Colors.grey),
             onPressed: () {
-              print("Presionaste +");
             },
           ),
           IconButton(
             icon: Icon(Icons.search, color: Colors.grey),
             onPressed: () {
-              print("Presionaste buscar");
             },
           ),
           IconButton(
             icon: Icon(Icons.menu, color: Colors.grey),
             onPressed: () {
-              print("Presionaste menú");
             },
           ),
         ],
@@ -52,7 +49,7 @@ class Homepage extends StatelessWidget {
               children: [
                 CircleAvatar(
                   radius: 20,
-                  backgroundImage: AssetImage("assets/4.jpg"),
+                  backgroundImage: AssetImage("imag/1.jpg"),
                 ),
                 SizedBox(width: 10),
                 Expanded(

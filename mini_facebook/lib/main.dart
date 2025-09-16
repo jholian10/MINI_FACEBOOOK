@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:mini_facebook/viwes/homepage.dart';
-import 'package:mini_facebook/viwes/login.dart';
-import 'package:mini_facebook/viwes/loading.dart';
+import 'package:mini_facebook/viwes/fallo.dart';
+
 
 void main() {
   runApp(MyApp());
@@ -12,6 +11,6 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(debugShowCheckedModeBanner: false, home: Homepage());
+    return MaterialApp(debugShowCheckedModeBanner: false, home: Fallo(onRetry: () {  },));
   }
 }
