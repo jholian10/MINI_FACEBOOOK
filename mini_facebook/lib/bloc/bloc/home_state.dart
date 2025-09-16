@@ -1,6 +1,5 @@
-part of 'home_bloc.dart';
-
-@immutable
-sealed class HomeState {}
-
-final class HomeInitial extends HomeState {}
+class Estados {}
+class login extends estados{}
+class HomeEvent extends estados{}
+class loading extends estados{}
+class fallo extends estados{}
