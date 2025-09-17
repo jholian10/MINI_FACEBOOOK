@@ -13,7 +13,7 @@ void main() {
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
-  
+
   get onRetry => null;
 
   @override
@@ -21,10 +21,10 @@ class MyApp extends StatelessWidget {
     return BlocProvider(
       create: (context) => Logicaapp(),
       child: MaterialApp(
+        debugShowCheckedModeBanner: false,
         home: BlocListener<Logicaapp, Estados>(
           listener: (context, state) {
             if (state is exitoso) {
-              print(" Listener $state");
               Navigator.push(
                 context,
                 MaterialPageRoute(builder: (_) => Homepage()),
@@ -34,15 +34,12 @@ class MyApp extends StatelessWidget {
           child: BlocBuilder<Logicaapp, Estados>(
             builder: (context, state) {
               if (state is login) {
-                print(" login $state");
                 return Login();
-              } else if (state is loading){
-                print(" login $state");
+              } else if (state is loading) {
                 return Loading();
-              } else if (state is fallo){
-                print(" login $state");
+              } else if (state is fallo) {
                 return Fallo(onRetry: onRetry);
-              } else{
+              } else {
                 return Login();
               }
             },
